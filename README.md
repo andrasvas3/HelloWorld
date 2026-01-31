@@ -11,3 +11,9 @@
 ` dotnet sln add src\HelloWorld `
 
 ` dotnet run --project src\HelloWorld `
+
+# Container
+
+` podman build --tag helloworld -f Containerfile . `
+
+` podman run --interactive --rm --name helloworld helloworld `
